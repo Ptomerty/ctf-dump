@@ -1,3 +1,5 @@
 # Sled Solution
 
 If you hijack EIP with >80 chars, you can make it point to a pop-ret. This resulting address has a chance of landing into your buffer, so place a sizable NOP sled in front of your shellcode and pray.
+
+(cat sled_inp -) | nc p1.tjctf.org 8010
